@@ -34,16 +34,19 @@ class guerrier : public Perso{
 public:
   void statsGuerrier();
 };
+
+class elfe : public Perso{
+  void statsefle();
+};
+
 class mage : public Perso{
 public:
   void statsMage();
 };
+
 class nain : public Perso{
 public:
   void statsnain();
-};
-class elfe : public Perso{
-  void statsefle();
 };
 
 #endif

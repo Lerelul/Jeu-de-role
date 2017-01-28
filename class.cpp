@@ -21,6 +21,48 @@ void guerrier::statsGuerrier(){
   degMagie = degPhc + mana / 4;//100
 }
 
+void elfe::statsefle(){
+  vie = 300;
+  mana = 80;
+  degat = 30;
+  endurance = 200;
+  lvl = 1;
+  std::string armure("armure_de_base_elfe");
+  defArmure = 40;
+  defMagie = defArmure + mana / 2;//80
+  std::string Arme("arme_de_base_elfe");
+  degArme = 65;
+  degPhc = degArme + degat / 2;//80
+  degMagie = degPhc + mana / 2;//120
+}
+
+void nain::statsnain(){
+  vie = 450;
+  mana = 20;
+  degat = 70;
+  endurance = 450;
+  lvl = 1;
+  std::string armure("armure_de_base_nain");
+  defArmure = 60;
+  std::string Arme("arme_de_base_nain");
+  degArme = 60;
+  degPhc = degArme + degat / 2;//95
+}
+
+void maga::statsMage(){
+  vie = 300;
+  mana = 100;
+  endurance = 150;
+  lvl = 1;
+  std::string armure("armure_de_base_mage");
+  defArmure = 40;
+  defMagie = defArmure + mana / 2;//90
+  std::string Arme("armure_de_base_mage");
+  degArme = 65;
+  degPhc = degArme;
+  degMagie = degPhc + mana / 2;//120
+}
+
 void Perso::choisirRace(){
   int classe;
   std::cout << "(1)Etre guerrier:" << '\n';
@@ -37,47 +79,17 @@ void Perso::choisirRace(){
     else if(classe == 2)
     {
       std::cout << "vous etes alors un elfe" << '\n';
-      vie = 300;
-      mana = 80;
-      degat = 30;
-      endurance = 200;
-      lvl = 1;
-      std::string armure("armure_de_base_elfe");
-      defArmure = 40;
-      defMagie = defArmure + mana / 2;//80
-      std::string Arme("arme_de_base_elfe");
-      degArme = 65;
-      degPhc = degArme + degat / 2;//80
-      degMagie = degPhc + mana / 2;//120
+      Perso::choisirRace();
       }
     else if(classe == 3)
     {
       std::cout << "vous etes alors un nain" << '\n';
-      vie = 450;
-      mana = 20;
-      degat = 70;
-      endurance = 450;
-      lvl = 1;
-      std::string armure("armure_de_base_nain");
-      defArmure = 60;
-      std::string Arme("arme_de_base_nain");
-      degArme = 60;
-      degPhc = degArme + degat / 2;//95
+      nain::statselfe();
       }
     else if(classe >= 4)
     {
       std::cout << "vous etes alors un mage" << '\n';
-      vie = 300;
-      mana = 100;
-      endurance = 150;
-      lvl = 1;
-      std::string armure("armure_de_base_mage");
-      defArmure = 40;
-      defMagie = defArmure + mana / 2;//90
-      std::string Arme("armure_de_base_mage");
-      degArme = 65;
-      degPhc = degArme;
-      degMagie = degPhc + mana / 2;//120
+      maga::statsMage();
       }
 }
 
