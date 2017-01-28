@@ -13,7 +13,7 @@ class Perso
   void changerArme();
   void lvlUp();
   bool enVie();
-/*private = non utilisable dans le main*/private:
+/*private = non utilisable dans le main*/protected:
   /*attribut = variabelles et toujours dans private*/
   int vie;
   int lvl;
@@ -28,6 +28,22 @@ class Perso
   int degMagie;
   int defMagie;
   /*variables de private modifiables que dans classe*/
+};
+
+class guerrier : public Perso{
+public:
+  void statsGuerrier();
+};
+class mage : public Perso{
+public:
+  void statsMage();
+};
+class nain : public Perso{
+public:
+  void statsnain();
+};
+class elfe : public Perso{
+  void statsefle();
 };
 
 #endif

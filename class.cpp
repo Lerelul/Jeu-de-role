@@ -6,6 +6,21 @@
 #include <ctime>
 #include "class.h"
 
+void guerrier::statsGuerrier(){
+  vie = 400;
+  mana = 40;
+  degat = 60;
+  endurance = 350;
+  lvl = 1;
+  std::string armure("armure_de_base_guerrier");
+  defArmure = 50;
+  defMagie = defArmure + mana / 2;//70
+  std::string Arme("armure_de_base_guerrier");
+  degArme = 60;
+  degPhc = degArme + degat / 2;//90
+  degMagie = degPhc + mana / 4;//100
+}
+
 void Perso::choisirRace(){
   int classe;
   std::cout << "(1)Etre guerrier:" << '\n';
@@ -17,18 +32,7 @@ void Perso::choisirRace(){
     if (classe == 1)
     {
       std::cout << "vous ête alors un guerrier" << '\n';
-      vie = 400;
-      mana = 40;
-      degat = 60;
-      endurance = 350;
-      lvl = 1;
-      std::string armure("armure_de_base_guerrier");
-      defArmure = 50;
-      defMagie = defArmure + mana / 2;//70
-      std::string Arme("armure_de_base_guerrier");
-      degArme = 60;
-      degPhc = degArme + degat / 2;//90
-      degMagie = degPhc + mana / 4;//100
+      Perso::choisirRace();
       }
     else if(classe == 2)
     {
