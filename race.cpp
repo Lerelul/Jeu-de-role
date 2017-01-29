@@ -4,9 +4,19 @@
 #include <cstdlib>
 #include <fstream>
 #include <ctime>
-#include "class.h"
 #include "race.h"
 
-int main(){
-  Perso zeelie, grunleck;
+void guerrier::statsGuerrier(){
+}
+
+void elfe::statsefle(){
+
+}
+
+void nain::statsnain(){
+
+}
+
+void maga::statsMage(){
+
 }
