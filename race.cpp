@@ -7,48 +7,57 @@
 #include "race.h"
 
 void guerrier::statsGuerrier(){
-  vie = 400;
-  mana = 40;
-  degat = 60;
-  endurance = 350;
-  lvl = 1;
+  vieGuerrier = 400;
+  manaGuerrier = 40;
+  degatGuerrier = 60;
+  enduranceGuerrier = 350;
+  lvlGuerrier = 1;
   std::string armure("armure_de_base_guerrier");
-  defArmure = 50;
-  defMagie = defArmure + mana / 2;//70
+  defArmureGuerrier = 50;
+  defMagieGuerrier = defArmureGuerrier + manaGuerrier / 2;//70
   std::string Arme("armure_de_base_guerrier");
-  degArme = 60;
-  degPhc = degArme + degat / 2;//90
-  degMagie = degPhc + mana / 4;//100
+  degArmeGuerrier = 60;
+  degPhcGuerrier = degArmeGuerrier + degatGuerrier / 2;//90
+  degMagieGuerrier = degPhcGuerrier + manaGuerrier / 4;//100
 }
 
 void elfe::statsefle(){
-  vie = 300;
-  mana = 80;
-  degat = 30;
-  endurance = 200;
-  lvl = 1;
+  vieElfe = 300;
+  manaElfe = 80;
+  degatElfe = 30;
+  enduranceElfe = 200;
+  lvlElfe = 1;
   std::string armure("armure_de_base_elfe");
-  defArmure = 40;
-  defMagie = defArmure + mana / 2;//80
+  defArmureElfe = 40;
+  defMagieElfe = defArmureElfe + manaElfe / 2;//80
   std::string Arme("arme_de_base_elfe");
-  degArme = 65;
-  degPhc = degArme + degat / 2;//80
-  degMagie = degPhc + mana / 2;//120
+  degArmeElfe = 65;
+  degPhcElfe = degArmeElfe + degatElfe / 2;//80
+  degMagieElfe = degPhcElfe + manaElfe / 2;//120
 }
 
 void nain::statsnain(){
-  vie = 450;
-  mana = 20;
-  degat = 70;
-  endurance = 450;
-  lvl = 1;
+  manaNain = 20;
+  degatNain = 70;
+  enduranceNain = 450;
+  lvlNain= 1;
   std::string armure("armure_de_base_nain");
-  defArmure = 60;
+  defArmureNain = 60;
   std::string Arme("arme_de_base_nain");
-  degArme = 60;
-  degPhc = degArme + degat / 2;//95
+  degArmeNain = 60;
+  degPhcNain = degArmeNain + degatNain / 2;//95
 }
 
 void mage::statsMage(){
-
+  vieMage = 300;
+  manaMage = 100;
+  enduranceMage = 150;
+  lvlMage = 1;
+  std::string armure("armure_de_base_mage");
+  defArmureMage = 40;
+  defMagieMage = defArmureMage + manaMage / 2;//90
+  std::string Arme("armure_de_base_mage");
+  degArmeMage = 65;
+  degPhcMage = degArmeMage;
+  degMagieMage = degPhcMage + manaMage / 2;//120
 }

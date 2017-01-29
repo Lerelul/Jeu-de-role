@@ -17,6 +17,7 @@ void Perso::choisirRace(){
   if (typeRace == 1) {
     std::cout << "Guerrier" << '\n';
     statsGuerrier;
+    std::cout << vieGuerrier << '\n';
   }
   else if(typeRace == 2){
     std::cout << "Elfe" << '\n';
@@ -30,4 +31,8 @@ void Perso::choisirRace(){
     std::cout << "Mage" << '\n';
     statsMage;
   }
+}
+
+void Perso::donnerCoup(){
+
 }

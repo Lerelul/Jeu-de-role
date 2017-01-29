@@ -8,7 +8,7 @@ class Perso
 /*méthodes = fonctions ettoujours dans public*/
   void choisirRace();
   void recevoirCoup(int degSubit);
-  void donnerCoup(Perso &cible);
+  void donnerCoup();
 /*private = non utilisable dans le main*/private:
   guerrier statsGuerrier;
   nain statsnain;
