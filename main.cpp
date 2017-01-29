@@ -9,4 +9,8 @@
 
 int main(){
   Perso zeelie, grunleck;
+  zeelie.choisirRace();
+  grunleck.choisirRace();
+
+  return 0;
 }

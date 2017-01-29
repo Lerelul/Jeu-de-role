@@ -10,7 +10,10 @@ class Perso
   void recevoirCoup(int degSubit);
   void donnerCoup(Perso &cible);
 /*private = non utilisable dans le main*/private:
-
+  guerrier statsGuerrier;
+  nain statsnain;
+  mage statsMage;
+  elfe statsefle;
 };
 
 #endif
