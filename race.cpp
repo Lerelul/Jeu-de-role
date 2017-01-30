@@ -6,8 +6,9 @@
 #include <ctime>
 #include "race.h"
 
-void guerrier::statsGuerrier(){
+Guerrier::Guerrier(){
   vieGuerrier = 400;
+  std::cout << vieGuerrier << '\n';
   manaGuerrier = 40;
   degatGuerrier = 60;
   enduranceGuerrier = 350;
@@ -21,7 +22,7 @@ void guerrier::statsGuerrier(){
   degMagieGuerrier = degPhcGuerrier + manaGuerrier / 4;//100
 }
 
-void elfe::statsefle(){
+Elfe::Elfe(){
   vieElfe = 300;
   manaElfe = 80;
   degatElfe = 30;
@@ -36,7 +37,7 @@ void elfe::statsefle(){
   degMagieElfe = degPhcElfe + manaElfe / 2;//120
 }
 
-void nain::statsnain(){
+Nain::Nain(){
   manaNain = 20;
   degatNain = 70;
   enduranceNain = 450;
@@ -48,7 +49,7 @@ void nain::statsnain(){
   degPhcNain = degArmeNain + degatNain / 2;//95
 }
 
-void mage::statsMage(){
+Mage::Mage(){
   vieMage = 300;
   manaMage = 100;
   enduranceMage = 150;

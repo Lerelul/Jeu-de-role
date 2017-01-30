@@ -1,9 +1,9 @@
 #ifndef RACE_H
 #define RACE_H
 
-class guerrier{
+class Guerrier{
 public:
-  void statsGuerrier();
+  Guerrier();
 protected:
   int vieGuerrier;
   int manaGuerrier;
@@ -17,25 +17,9 @@ protected:
   int degMagieGuerrier;
 };
 
-class elfe{
+class Nain{
 public:
-  void statsefle();
-protected:
-  int vieElfe;
-  int manaElfe;
-  int degatElfe;
-  int enduranceElfe;
-  int lvlElfe;
-  int defArmureElfe;
-  int defMagieElfe;
-  int degArmeElfe;
-  int degPhcElfe;
-  int degMagieElfe;
-};
-
-class nain{
-public:
-  void statsnain();
+  Nain();
 protected:
     int vieNain;
     int manaNain;
@@ -49,9 +33,25 @@ protected:
     int degMagieNain;
 };
 
-class mage{
+class Elfe{
 public:
-  void statsMage();
+  Elfe();
+protected:
+  int vieElfe;
+  int manaElfe;
+  int degatElfe;
+  int enduranceElfe;
+  int lvlElfe;
+  int defArmureElfe;
+  int defMagieElfe;//80
+  int degArmeElfe;
+  int degPhcElfe;//80
+  int degMagieElfe;//120
+};
+
+class Mage{
+public:
+  Mage();
 protected:
     int vieMage;
     int manaMage;

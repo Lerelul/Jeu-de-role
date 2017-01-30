@@ -16,20 +16,18 @@ void Perso::choisirRace(){
 
   if (typeRace == 1) {
     std::cout << "Guerrier" << '\n';
-    statsGuerrier;
-    std::cout << vieGuerrier << '\n';
+    Guerrier;
   }
   else if(typeRace == 2){
     std::cout << "Elfe" << '\n';
-    statsefle;
   }
   else if(typeRace == 3){
     std::cout << "Nain" << '\n';
-    statsnain;
+    Nain;
   }
   else if(typeRace >= 4){
     std::cout << "Mage" << '\n';
-    statsMage;
+    Mage;
   }
 }
 
