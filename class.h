@@ -1,17 +1,21 @@
 #ifndef CLASS_H
 #define CLASS_H
-#include "race.h"
-class Perso : public Guerrier , public Elfe , public Nain , public Mage{
+#include "combat.h"
+class Perso{
 /*public = utilisable dans main*/public:
 /*méthodes = fonctions ettoujours dans public*/
   void choisirRace();
-  void recevoirCoup(int degSubit);
-  void donnrCoup();
-private:
-  Guerrier  Guerrier;
-  Elfe  Elfe;
-  Nain  Nain;
-  Mage  Mage;
+protected:
+  int vie;
+  int mana;
+  int degat;
+  int endurance;
+  int lvl;
+  int defArmure;
+  int defMagie;
+  int degArme;
+  int degPhc;
+  int degMagie;
 };
 
 #endif
