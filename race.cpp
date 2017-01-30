@@ -38,6 +38,7 @@ Elfe::Elfe(){
 }
 
 Nain::Nain(){
+  vieNain = 450;
   manaNain = 20;
   degatNain = 70;
   enduranceNain = 450;
