@@ -43,10 +43,10 @@ protected:
   int enduranceElfe;
   int lvlElfe;
   int defArmureElfe;
-  int defMagieElfe;//80
+  int defMagieElfe;
   int degArmeElfe;
-  int degPhcElfe;//80
-  int degMagieElfe;//120
+  int degPhcElfe;
+  int degMagieElfe;
 };
 
 class Mage{
