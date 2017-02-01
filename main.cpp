@@ -5,12 +5,12 @@
 #include <fstream>
 #include <ctime>
 #include "class.h"
-#include "race.h"
 
 int main(){
   Perso zeelie, grunleck;
   zeelie.choisirRace();
   grunleck.choisirRace();
 
+  zeelie.attaquer(grunleck);
   return 0;
 }

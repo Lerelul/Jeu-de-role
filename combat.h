@@ -1,11 +1,12 @@
-#ifndef RACE_H
-#define RACE_H
-
-class combat : public Perso{
-public:
-  void attaquer(Perso &adversaire);
-  void recevoireDommage(int nbDmg);
-private:
+#ifndef COMBAT_H
+#define COMBAT_H
+#include "class.h"
+class Combat : public Perso {
+  public:
+    void recevoireDommage(int nbDmg);
+    void attaquer(Perso &adversaire);
+    void defense();
+  private:
 };
 
 #endif
